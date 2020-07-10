@@ -98,19 +98,29 @@ export default {
       items: [
         {
           icon: 'mdi-apps',
-          title: 'Welcome',
+          title: 'Home',
           to: '/'
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
+          title: 'Activities',
+          to: '/activities'
+        },
+        {
+          icon: 'mdi-card-account-mail-outline',
+          title: 'Contact',
+          to: '/contact'
+        },
+        {
+          icon: 'mdi-twitter',
+          title: 'Twitter',
+          to: '/twitter'
         }
       ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js'
+      title: '旭川高専パソコン部'
     }
   }
 }
