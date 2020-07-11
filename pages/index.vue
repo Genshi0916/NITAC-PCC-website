@@ -10,12 +10,12 @@
       md6
     >
       <div class="text-center">
-        <logo />
-        <vuetify-logo />
+        <Logo/>
       </div>
       <v-card>
         <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
+          National Institute of Technology Asahikawa College
+          Personal Computer Club
         </v-card-title>
         <v-card-text>
           <p>hoge</p>
@@ -86,12 +86,12 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
+// import VuetifyLogo from '~/components/VuetifyLogo.vue'
 
 export default {
   components: {
     Logo,
-    VuetifyLogo
+    // VuetifyLogo
   }
 }
 </script>
