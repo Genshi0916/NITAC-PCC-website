@@ -1,3 +1,94 @@
 <template>
-  <p>twitter</p>
-</template>>
+    <v-layout
+    column
+    justify-center
+    align-center
+  >
+    <v-flex
+      xs12
+      sm8
+      md6
+    >
+      <!-- <v-card>
+        <v-card-text> -->
+          <!-- =
+          <v-container>
+            <v-layout justify-center>
+              <v-btn v-for="item in items" :key="item" class="mx-6" fab icon>
+                <v-card>
+                  <v-card-title>{{item.title}}</v-card-title>
+                  <a v-bind:href="item.url" target="_blank">
+                    <v-avatar size="100">
+                      <img v-bind:src="item.icon" alt="avatar" id="radicon">
+                    </v-avatar>
+                  </a>
+                </v-card>
+              </v-btn>
+            </v-layout>
+          </v-container> -->
+        <!-- </v-card-text>
+      </v-card> -->
+
+
+        <v-col
+          v-for="(item, i) in items"
+          :key="i"
+          cols="12"
+        >
+          <v-card dark>
+            <div class="d-flex flex-no-wrap justify-space-between">
+              <div>
+                <v-card-title
+                  class="headline"
+                  v-text="item.title"
+                ></v-card-title>
+                <v-card-subtitle v-text="item.artist"></v-card-subtitle>
+              </div>
+              <a v-bind:href="item.url" target="_blank">
+                <v-avatar
+                  class="ma-3"
+                  size="210"
+                  tile
+                >
+                  <v-img :src="item.icon"></v-img>
+                </v-avatar>
+              </a>
+            </div>
+          </v-card>
+        </v-col>
+
+
+    </v-flex>
+  </v-layout>
+</template>
+<script>
+  export default
+  {
+    name:'twitter',
+    components:
+    {
+
+    },
+    data:()=>
+    ({
+      items:
+      [
+        {
+          title:"ANCT-PCC",
+          url:"https://twitter.com/ANCT_PCC",
+          icon:require("../static/logo1.jpg")
+        },
+        {
+          title:"sanct",
+          url:"https://sanct.connpass.com/",
+          icon:require("../static/sanct.jpeg")
+        },
+        {
+          title:"サイト制作者",
+          url:"https://twitter.com/genshi0916",
+          icon:require("../static/genshi.jpg")
+        }
+      ]
+    })
+  }
+</script>
