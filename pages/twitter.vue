@@ -9,26 +9,6 @@
       sm8
       md6
     >
-      <!-- <v-card>
-        <v-card-text> -->
-          <!-- =
-          <v-container>
-            <v-layout justify-center>
-              <v-btn v-for="item in items" :key="item" class="mx-6" fab icon>
-                <v-card>
-                  <v-card-title>{{item.title}}</v-card-title>
-                  <a v-bind:href="item.url" target="_blank">
-                    <v-avatar size="100">
-                      <img v-bind:src="item.icon" alt="avatar" id="radicon">
-                    </v-avatar>
-                  </a>
-                </v-card>
-              </v-btn>
-            </v-layout>
-          </v-container> -->
-        <!-- </v-card-text>
-      </v-card> -->
-
 
         <v-col
           v-for="(item, i) in items"

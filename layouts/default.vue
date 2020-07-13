@@ -6,6 +6,7 @@
       :clipped="clipped"
       fixed
       app
+      v-if="$vuetify.breakpoint.mobile"
     >
       <v-list>
         <v-list-item
@@ -29,23 +30,15 @@
       fixed
       app
     >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-
-
+      <v-app-bar-nav-icon @click="drawer = !drawer" v-if="$vuetify.breakpoint.mobile" />
       <v-toolbar-title v-text="title" />
-      <v-spacer />
-      <v-btn
-        icon
-        @click.stop="rightDrawer = !rightDrawer"
-      >
-      </v-btn>
+      <Header v-if="!$vuetify.breakpoint.mobile"></Header>
     </v-app-bar>
     <v-content>
       <v-container>
         <nuxt />
       </v-container>
     </v-content>
-
     <v-footer
       :absolute="!fixed"
       app
@@ -58,11 +51,15 @@
 </template>
 
 <script>
+import Header from '../components/header'
 export default {
+  comments:{
+    Header,
+  },
   data () {
     return {
       clipped: false,
-      drawer: false,
+      drawer: null,
       fixed: false,
       items: [
         {
