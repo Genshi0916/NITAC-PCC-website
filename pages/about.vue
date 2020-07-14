@@ -36,15 +36,13 @@
             </div>
           </v-card>
         </v-col>
-
-
     </v-flex>
   </v-layout>
 </template>
 <script>
   export default
   {
-    name:'twitter',
+    name:'about',
     components:
     {
 

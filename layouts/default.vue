@@ -79,8 +79,8 @@ export default {
         },
         {
           icon: 'mdi-twitter',
-          title: 'Twitter',
-          to: '/twitter'
+          title: 'about',
+          to: '/about'
         }
       ],
       miniVariant: false,

@@ -17,7 +17,7 @@ export default
     items:[
       {to:'activities'},
       {to:'contact'},
-      {to:'twitter'},
+      {to:'about'},
     ]
   })
 }
