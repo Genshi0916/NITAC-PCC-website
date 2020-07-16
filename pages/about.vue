@@ -63,7 +63,7 @@
         },
         {
           title:"サイト制作者",
-          url:"https://twitter.com/genshi0916",
+          url:"http://genshi0916.github.io/",
           icon:require("../static/genshi.jpg")
         }
       ]
