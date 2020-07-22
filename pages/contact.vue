@@ -1,7 +1,7 @@
-<!--><template>
-  <v-row justify="center">
-    <v-dialog v-model="dialog" persistent max-width="600px">
-      <v-card>
+<template>
+  <div>
+    <v-row id="center" justify="center">
+      <v-card >
         <v-card-title>
           <span class="headline">Contact Form</span>
         </v-card-title>
@@ -22,43 +22,11 @@
         </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn to="/" color="blue darken-1" text @click="check">Close</v-btn>
           <v-btn  v-on:click="submit" color="blue darken-1" tex>Send</v-btn>
         </v-card-actions>
       </v-card>
-    </v-dialog>
-  </v-row>
-</template>-->
-
-<template>
-<v-card>
-  <v-form
-    ref="form"
-    v-model="valid"
-    lazy-validation
-  >
-    <v-text-field
-      v-model="name"
-      label="お名前"
-      required
-    ></v-text-field>
-
-    <v-text-field
-      v-model="email"
-      label="メールアドレス"
-      required
-    ></v-text-field>
-
-    <v-text-field
-      v-model="description"
-      label="問い合わせ内容"
-      required
-    ></v-text-field>
-
-      <v-btn to="/" color="blue darken-1" @click="check">Close</v-btn>
-      <v-btn  v-on:click="submit" color="blue darken-1">Send</v-btn>
-  </v-form>
-  </v-card>
+    </v-row>
+  </div>
 </template>
 
 <script>
@@ -96,3 +64,12 @@ export default {
   }
 }
 </script>
+<style>
+  #center
+  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  }
+</style>
