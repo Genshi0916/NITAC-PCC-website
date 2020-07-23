@@ -64,12 +64,12 @@ export default {
   }
 }
 </script>
-<style>
+<style scoped>
   #center
   {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
   }
 </style>

@@ -9,7 +9,6 @@
       sm8
       md6
     >
-
         <v-col
           v-for="(item, i) in items"
           :key="i"
@@ -22,7 +21,6 @@
                   class="headline"
                   v-text="item.title"
                 ></v-card-title>
-                <v-card-subtitle v-text="item.artist"></v-card-subtitle>
               </div>
               <a v-bind:href="item.url" target="_blank">
                 <v-avatar
