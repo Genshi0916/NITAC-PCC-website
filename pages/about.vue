@@ -15,7 +15,7 @@
           cols="12"
         >
           <v-card dark>
-            <div class="d-flex flex-no-wrap justify-space-between">
+            <div class="justify-space-between" v-if="$vuetify.breakpoint.mobile">
               <div>
                 <v-card-title
                   class="headline"
@@ -25,10 +25,27 @@
               <a v-bind:href="item.url" target="_blank">
                 <v-avatar
                   class="ma-3"
-                  size="210"
+                  size="230"
                   tile
                 >
-                  <v-img :src="item.icon"></v-img>
+                  <v-img :src="item.icon" id="size"></v-img>
+                </v-avatar>
+              </a>
+            </div>
+            <div class="d-flex justify-space-between" v-if="!$vuetify.breakpoint.mobile">
+              <div>
+                <v-card-title
+                  class="headline"
+                  v-text="item.title"
+                ></v-card-title>
+              </div>
+              <a v-bind:href="item.url" target="_blank">
+                <v-avatar
+                  class="ma-3"
+                  size="260"
+                  tile
+                >
+                  <v-img :src="item.icon" id="size"></v-img>
                 </v-avatar>
               </a>
             </div>
@@ -68,3 +85,9 @@
     })
   }
 </script>
+<style>
+  #size
+  {
+    height:250px;
+  }
+</style>

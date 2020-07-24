@@ -31,7 +31,7 @@
       app
     >
       <v-app-bar-nav-icon @click="drawer = !drawer" v-if="$vuetify.breakpoint.mobile" />
-      <v-toolbar-title v-text="title" />
+      <v-toolbar-title><a href="https://nitac-pcc-website.web.app/" id="none">旭川高専パソコン部</a></v-toolbar-title>
       <Header v-if="!$vuetify.breakpoint.mobile"></Header>
     </v-app-bar>
     <v-content>
@@ -83,11 +83,14 @@ export default {
           to: '/about'
         }
       ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: '旭川高専パソコン部'
     }
   }
 }
 </script>
+<style>
+  #none
+  {
+    text-decoration: none;
+    color: white;
+  }
+</style>

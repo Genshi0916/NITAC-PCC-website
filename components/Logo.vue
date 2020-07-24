@@ -18,7 +18,6 @@
 
 #logo
 {
-  /* padding-top: 100px; */
   width: 300px;
 }
 
