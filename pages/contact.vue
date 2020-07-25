@@ -49,7 +49,7 @@ export default {
               'email:'+email+'\n'+
               '内容:'+description+'\n'
       }
-      const url = 'https://hooks.slack.com/services/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'
+      const url = 'ここにはwebhookのトークンが入ります'
 
       fetch(url,{
         method:'POST',
