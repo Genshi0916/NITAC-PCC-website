@@ -65,11 +65,48 @@ export default {
 }
 </script>
 <style scoped>
+
+  @media screen and (min-width:0px) and ( max-width:480px){
+
+  }
+
+  @media screen and (min-width:480px) and (max-width:768px){
   #center
   {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80vh;
+  }
+  }
+
+  @media screen and (min-width:768px) and ( max-width:1024px){
+  #center
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  }
+
+  @media screen and (min-width:1024px) and ( max-width:1400px){
+    #center
+    {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+    }
+  }
+
+  @media screen and (min-width:1400px){
+    #center
+    {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+    }
   }
 </style>
