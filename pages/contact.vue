@@ -1,31 +1,33 @@
 <template>
   <div>
-    <v-row id="center" justify="center">
-      <v-card >
-        <v-card-title>
-          <span class="headline">Contact Form</span>
-        </v-card-title>
-        <v-card-text>
-          <v-container>
-            <v-row>
-              <v-col cols="12">
-                <v-text-field label="お名前" required v-model="name"></v-text-field>
-              </v-col>
-              <v-col cols="12">
-                <v-text-field label="メールアドレス" required v-model="email"></v-text-field>
-              </v-col>
-              <v-col cols="12">
-                <v-textarea label="問い合わせ内容" outlined required v-model="description"></v-textarea>
-              </v-col>
-            </v-row>
-          </v-container>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer></v-spacer>
-          <v-btn  v-on:click="submit" color="blue darken-1" tex>Send</v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-row>
+    <v-main>
+      <v-row id="center" justify="center">
+        <v-card >
+          <v-card-title>
+            <span class="headline">Contact Form</span>
+          </v-card-title>
+          <v-card-text>
+            <v-container>
+              <v-row>
+                <v-col cols="12">
+                  <v-text-field label="お名前" required v-model="name"></v-text-field>
+                </v-col>
+                <v-col cols="12">
+                  <v-text-field label="メールアドレス" required v-model="email"></v-text-field>
+                </v-col>
+                <v-col cols="12">
+                  <v-textarea label="問い合わせ内容" outlined required v-model="description"></v-textarea>
+                </v-col>
+              </v-row>
+            </v-container>
+          </v-card-text>
+          <v-card-actions>
+            <v-spacer></v-spacer>
+            <v-btn  v-on:click="submit" color="blue darken-1" tex>Send</v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-row>
+    </v-main>
   </div>
 </template>
 
@@ -49,7 +51,7 @@ export default {
               'email:'+email+'\n'+
               '内容:'+description+'\n'
       }
-      const url = 'ここにはwebhookのトークンが入ります'
+      const url = 'ここにはwebhookのurlが入ります'
 
       fetch(url,{
         method:'POST',
