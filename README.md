@@ -1,20 +1,29 @@
 # NITAC-PCC-website
-https://nitac-pcc-website.web.app/
-## Build Setup
+ 
+弊高専パソコン部のHPを作りました
+
+url : [https://nitac-pcc-website.web.app/](https://nitac-pcc-website.web.app/)
+
+# Requirement
+ 
+* vue
+* vuetify
+ 
+# Installation
+ 
+
+ 
+```bash
+$ npm install -g @vue/cli
+$ npm install vuetify
+```
+ 
+# Usage
 
 ```bash
-# install dependencies
-$ npm install
-
-# serve with hot reload at localhost:3000
 $ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+# Hosting
+
+This page is hosted by firebase.
