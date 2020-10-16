@@ -14,11 +14,10 @@ url : [https://nitac-pcc-website.web.app/](https://nitac-pcc-website.web.app/)
 
  
 ```bash
-$ npm install -g @vue/cli
-$ npm install vuetify
+$ npm install
 ```
  
-# Usage
+# Usage(Starting the development server)
 
 ```bash
 $ npm run dev
