@@ -3,12 +3,12 @@
     max-width="540"
     class="mx-auto"
   >
-
     <v-container>
       <v-row dense>
         <v-col v-for="(item, i) in items"
           :key="i"
-          cols="12">
+          cols="12"
+        >
           <v-card
             :color="item.color"
             dark

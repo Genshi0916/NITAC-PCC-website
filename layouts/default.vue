@@ -51,45 +51,44 @@
 </template>
 
 <script>
-import Header from '../components/header'
-export default {
-  comments:{
-    Header,
-  },
-  data () {
-    return {
-      clipped: false,
-      drawer: null,
-      fixed: false,
-      items: [
-        {
-          icon: 'mdi-apps',
-          title: 'Home',
-          to: '/'
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Activities',
-          to: '/activities'
-        },
-        {
-          icon: 'mdi-card-account-mail-outline',
-          title: 'Contact',
-          to: '/contact'
-        },
-        {
-          icon: 'mdi-twitter',
-          title: 'about',
-          to: '/about'
-        }
-      ],
+  import Header from '../components/header'
+  export default {
+    comments:{
+      Header,
+    },
+    data () {
+      return {
+        clipped: false,
+        drawer: null,
+        fixed: false,
+        items: [
+          {
+            icon: 'mdi-apps',
+            title: 'Home',
+            to: '/'
+          },
+          {
+            icon: 'mdi-chart-bubble',
+            title: 'Activities',
+            to: '/activities'
+          },
+          {
+            icon: 'mdi-card-account-mail-outline',
+            title: 'Contact',
+            to: '/contact'
+          },
+          {
+            icon: 'mdi-twitter',
+            title: 'about',
+            to: '/about'
+          }
+        ],
+      }
     }
   }
-}
 </script>
 <style>
-  #none
-  {
+  #none{
     text-decoration: none;
     color: white;
   }
