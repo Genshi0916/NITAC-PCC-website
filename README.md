@@ -4,25 +4,18 @@
 
 url : [https://nitac-pcc-website.web.app/](https://nitac-pcc-website.web.app/)
 
-# Requirement
- 
-* vue
-* vuetify
- 
-# Installation
- 
-
+# Setup
  
 ```bash
+$ git clone https://github.com/Genshi0916/NITAC-PCC-website.git
+$ cd NITAC-PCC-website
 $ npm install
-```
- 
-# Usage(Starting the development server)
+``` 
+# Start
 
 ```bash
 $ npm run dev
 ```
-
 # Hosting
 
 This page is hosted by firebase.
