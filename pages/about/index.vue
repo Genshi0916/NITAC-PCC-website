@@ -22,7 +22,7 @@
                 v-text="item.title"
               ></v-card-title>
             </div>
-            <a v-bind:href="item.url" target="_blank">
+            <a v-bind:href="item.url" :target="item.target">
               <v-avatar
                 class="ma-3"
                 size="230"
@@ -76,7 +76,7 @@
         },
         {
           title:"サイト制作者",
-          url:"http://genshi0916.github.io/",
+          url:"https://genshi-0916.web.app/",
           icon:require("static/genshi.jpg"),
           target:"_blank"
         }

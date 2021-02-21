@@ -57,7 +57,7 @@ export default {
         method:'POST',
         body:JSON.stringify(payload)
       }).then(()=>{
-        alert('送信完了');
+        alert('送信完了しました。返事が来るまでお待ちください。');
         this.name="";
         this.email="";
         this.description="";
